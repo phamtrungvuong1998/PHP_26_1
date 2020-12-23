@@ -1,8 +1,11 @@
 <?php
 	$name = "Pham Trung Vuong";
 	$data = explode(" ", $name);
-	print_r($data);
-	echo "Họ : " . $data[0];
-	
+	echo "Họ : " . $data[0] . "<br>";
+	for ($i=1; $i < count($data) - 1 ; $i++) {
+		$middle_name = "";
+		$middle_name = $data[$i] . $middle_name;
+	}
+	echo "Tên đệm : " . $middle_name . "<br>";
 	echo "Tên : " . $data[count($data) - 1];
 ?>
